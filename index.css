@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  color: rgb(0, 0, 0);
+}
+
+
+#button {
+  border-radius: 80px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#input {
+  font-size: 20px;
+  outline: none;
+  border: none;
+  margin: 5px;
+  padding-left: 10px;
+}
+
+#loupe {
+  margin-right: 15px;
+  background-image: url(./png/loupe.png);
+  background-size: cover;
+  outline: none;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  background-color: white;
+}
+
+hr {
+  border: 2px solid orange;
+}
+
+.picture {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+#addImages {
+  text-align: center;
+}
