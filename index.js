@@ -1,14 +1,14 @@
 document.querySelector("#input").addEventListener("keydown", (event) => {
   if (event.code === "Enter") {
-    requestImage();
+    requestImages();
   }
 });
 
 document.querySelector("#loupe").addEventListener("click", () => {
-  requestImage();
+  requestImages();
 });
 
-function requestImage() {
+function requestImages() {
   const value = document.querySelector("#input").value;
   createFetch(value);
 }
@@ -23,10 +23,10 @@ function createFetch(value) {
 
   fetch(url)
     .then((res) => res.json())
-    .then((data) => showImage(data));
+    .then((data) => showImages(data));
 }
 
-function showImage(data) {
+function showImages(data) {
   for (let i = 0; i < data.results.length; i++) {
     const img = document.createElement("img");
 
